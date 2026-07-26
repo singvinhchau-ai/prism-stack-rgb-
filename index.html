@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prism Stack RGB</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
 :root {
   --r:#ff003c; --g:#00ff88; --b:#00c8ff; --p:#b400ff; --y:#ffcc00;
@@ -13,7 +12,7 @@
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:#e8e8f0;font-family:'Rajdhani',sans-serif;overflow-x:hidden;cursor:none}
+body{background:var(--bg);color:#e8e8f0;font-family:Arial, sans-serif;overflow-x:hidden;cursor:none}
 
 /* CURSOR */
 #cur{position:fixed;width:12px;height:12px;background:var(--b);border-radius:50%;pointer-events:none;z-index:99999;box-shadow:0 0 12px var(--b),0 0 24px var(--b);transform:translate(-50%,-50%);transition:transform .15s;left:-50px;top:-50px}
@@ -24,13 +23,13 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;background:rgba(5,5,8,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.05)}
-.nav-logo{font-family:'Orbitron',monospace;font-size:1rem;font-weight:900;color:#fff}
+.nav-logo{font-family:Arial, sans-serif;font-size:1rem;font-weight:900;color:#fff}
 .nav-logo .ac{color:var(--b)}
 .nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{font-family:'Share Tech Mono',monospace;font-size:.78rem;color:rgba(232,232,240,.5);text-decoration:none;letter-spacing:.1em;transition:color .2s}
+.nav-links a{font-family:Arial, sans-serif;font-size:.78rem;color:rgba(232,232,240,.5);text-decoration:none;letter-spacing:.1em;transition:color .2s}
 .nav-links a:hover{color:var(--b)}
 .nav-actions{display:flex;gap:.7rem;align-items:center}
-.nav-btn{font-family:'Orbitron',monospace;font-size:.75rem;font-weight:700;letter-spacing:.1em;padding:.6em 1.4em;background:linear-gradient(135deg,var(--b),var(--p));color:#fff;border:none;border-radius:4px;cursor:none;text-decoration:none;box-shadow:0 0 15px rgba(0,200,255,.4);transition:all .2s}
+.nav-btn{font-family:Arial, sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.1em;padding:.6em 1.4em;background:linear-gradient(135deg,var(--b),var(--p));color:#fff;border:none;border-radius:4px;cursor:none;text-decoration:none;box-shadow:0 0 15px rgba(0,200,255,.4);transition:all .2s}
 .nav-btn:hover{box-shadow:0 0 25px rgba(0,200,255,.7);transform:translateY(-2px)}
 .nav-btn-dl{background:linear-gradient(135deg,var(--g),var(--b));box-shadow:0 0 15px rgba(0,255,136,.4)}
 .nav-btn-dl:hover{box-shadow:0 0 25px rgba(0,255,136,.7)}
@@ -42,17 +41,17 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.2rem 2rem;display:
 .float-block{position:absolute;border-radius:4px;animation:floatUp linear infinite}
 @keyframes floatUp{0%{transform:translateY(110vh) rotate(0deg);opacity:0}10%{opacity:.2}90%{opacity:.15}100%{transform:translateY(-10vh) rotate(360deg);opacity:0}}
 .hero-content{position:relative;z-index:2}
-.hero-badge{display:inline-block;font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.3em;color:var(--g);border:1px solid var(--g);padding:.3em 1em;margin-bottom:1.5rem;box-shadow:0 0 12px rgba(0,255,136,.3);animation:blinkAnim 2s infinite}
+.hero-badge{display:inline-block;font-family:Arial, sans-serif;font-size:.7rem;letter-spacing:.3em;color:var(--g);border:1px solid var(--g);padding:.3em 1em;margin-bottom:1.5rem;box-shadow:0 0 12px rgba(0,255,136,.3);animation:blinkAnim 2s infinite}
 @keyframes blinkAnim{0%,100%{opacity:1}50%{opacity:.6}}
-.hero-title{font-family:'Orbitron',monospace;font-weight:900;font-size:clamp(2.8rem,8vw,7rem);line-height:1;margin-bottom:.3em}
+.hero-title{font-family:Arial, sans-serif;font-weight:900;font-size:clamp(2.8rem,8vw,7rem);line-height:1;margin-bottom:.3em}
 .t1{display:block}
 .t2{display:block;background:linear-gradient(90deg,var(--r),var(--p),var(--b));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 30px rgba(0,200,255,.6));animation:rgbDrop 4s ease infinite}
 @keyframes rgbDrop{0%{filter:drop-shadow(0 0 30px rgba(255,0,60,.7))}33%{filter:drop-shadow(0 0 30px rgba(180,0,255,.7))}66%{filter:drop-shadow(0 0 30px rgba(0,200,255,.7))}100%{filter:drop-shadow(0 0 30px rgba(255,0,60,.7))}}
-.hero-sub{font-family:'Share Tech Mono',monospace;font-size:clamp(.65rem,2vw,1rem);color:var(--y);letter-spacing:.4em;margin-bottom:1.5rem;text-shadow:0 0 16px var(--y)}
+.hero-sub{font-family:Arial, sans-serif;font-size:clamp(.65rem,2vw,1rem);color:var(--y);letter-spacing:.4em;margin-bottom:1.5rem;text-shadow:0 0 16px var(--y)}
 .hero-tag{font-size:clamp(1rem,2.5vw,1.4rem);font-weight:300;color:rgba(232,232,240,.7);margin-bottom:3rem}
 .hero-tag span{color:#fff;font-weight:600}
 .btn-group{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn{font-family:'Orbitron',monospace;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:.9em 2.2em;border:none;border-radius:4px;cursor:none;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.btn{font-family:Arial, sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:.9em 2.2em;border:none;border-radius:4px;cursor:none;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}
 .btn::before{content:'';position:absolute;inset:0;background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.15) 50%,transparent 70%);transform:translateX(-100%);transition:transform .4s}
 .btn:hover::before{transform:translateX(100%)}
 .btn-p{background:linear-gradient(135deg,var(--b),var(--p));color:#fff;box-shadow:0 0 20px rgba(0,200,255,.5)}
@@ -61,21 +60,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.2rem 2rem;display:
 .btn-s:hover{border-color:var(--g);color:var(--g);box-shadow:0 0 20px rgba(0,255,136,.3);transform:translateY(-3px)}
 .btn-dl{background:linear-gradient(135deg,var(--g),var(--b));color:#050508;box-shadow:0 0 20px rgba(0,255,136,.5)}
 .btn-dl:hover{transform:translateY(-3px);box-shadow:0 0 30px rgba(0,255,136,.8)}
-.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.2em;color:rgba(255,255,255,.3);animation:updown 2s ease infinite}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;font-family:Arial, sans-serif;font-size:.65rem;letter-spacing:.2em;color:rgba(255,255,255,.3);animation:updown 2s ease infinite}
 .scroll-arrow{width:1px;height:40px;background:linear-gradient(to bottom,transparent,var(--b))}
 @keyframes updown{0%,100%{transform:translateX(-50%) translateY(0);opacity:.5}50%{transform:translateX(-50%) translateY(8px);opacity:1}}
 
 /* STATS */
 .stats-bar{background:rgba(0,200,255,.05);border-top:1px solid rgba(0,200,255,.1);border-bottom:1px solid rgba(0,200,255,.1);padding:1.5rem 2rem;display:flex;justify-content:center;gap:4rem;flex-wrap:wrap}
 .stat{text-align:center}
-.stat-num{font-family:'Orbitron',monospace;font-size:1.8rem;font-weight:900;color:var(--b);text-shadow:0 0 15px var(--b);display:block}
-.stat-label{font-family:'Share Tech Mono',monospace;font-size:.7rem;color:rgba(232,232,240,.4);letter-spacing:.2em;text-transform:uppercase}
+.stat-num{font-family:Arial, sans-serif;font-size:1.8rem;font-weight:900;color:var(--b);text-shadow:0 0 15px var(--b);display:block}
+.stat-label{font-family:Arial, sans-serif;font-size:.7rem;color:rgba(232,232,240,.4);letter-spacing:.2em;text-transform:uppercase}
 
 /* COMMON */
 section{padding:6rem 2rem;position:relative}
 .container{max-width:1200px;margin:0 auto}
-.sec-label{font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.35em;color:var(--b);text-transform:uppercase;margin-bottom:.8rem}
-.sec-title{font-family:'Orbitron',monospace;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;margin-bottom:1rem;line-height:1.1}
+.sec-label{font-family:Arial, sans-serif;font-size:.7rem;letter-spacing:.35em;color:var(--b);text-transform:uppercase;margin-bottom:.8rem}
+.sec-title{font-family:Arial, sans-serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;margin-bottom:1rem;line-height:1.1}
 .sec-title .ac{color:var(--b)}
 .divider{width:60px;height:2px;background:linear-gradient(90deg,var(--b),var(--p));margin-bottom:3rem;box-shadow:0 0 10px var(--b)}
 
@@ -87,7 +86,7 @@ section{padding:6rem 2rem;position:relative}
 .corner-tl,.corner-br{position:absolute;width:20px;height:20px;border-color:var(--b);border-style:solid;z-index:2}
 .corner-tl{top:-1px;left:-1px;border-width:2px 0 0 2px}
 .corner-br{bottom:-1px;right:-1px;border-width:0 2px 2px 0}
-.preview-desc h2{font-family:'Orbitron',monospace;font-size:2rem;font-weight:700;margin-bottom:1rem;line-height:1.2}
+.preview-desc h2{font-family:Arial, sans-serif;font-size:2rem;font-weight:700;margin-bottom:1rem;line-height:1.2}
 .preview-desc p{color:rgba(232,232,240,.7);line-height:1.8;margin-bottom:1.5rem;font-size:1.05rem}
 .pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(0,200,255,.08);border:1px solid rgba(0,200,255,.2);padding:.5em 1em;border-radius:100px;font-size:.85rem;margin:.3rem .2rem;color:var(--b);transition:all .2s}
 .pill:hover{background:rgba(0,200,255,.15);box-shadow:0 0 15px rgba(0,200,255,.3)}
@@ -101,7 +100,7 @@ section{padding:6rem 2rem;position:relative}
 .gitem:hover img{transform:scale(1.05)}
 .g-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%);transition:background .3s;z-index:1}
 .gitem:hover .g-ov{background:linear-gradient(to top,rgba(0,200,255,.15),rgba(0,0,0,.2) 60%,transparent)}
-.g-lbl{position:absolute;bottom:10px;left:12px;font-family:'Share Tech Mono',monospace;font-size:.65rem;color:rgba(255,255,255,.6);letter-spacing:.15em;z-index:2}
+.g-lbl{position:absolute;bottom:10px;left:12px;font-family:Arial, sans-serif;font-size:.65rem;color:rgba(255,255,255,.6);letter-spacing:.15em;z-index:2}
 .g-zoom{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0);width:52px;height:52px;background:rgba(0,0,0,.6);border:2px solid rgba(0,200,255,.8);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;z-index:3;transition:transform .25s cubic-bezier(.34,1.56,.64,1);box-shadow:0 0 20px rgba(0,200,255,.3)}
 .gitem:hover .g-zoom{transform:translate(-50%,-50%) scale(1);box-shadow:0 0 30px rgba(0,200,255,.6)}
 
@@ -113,14 +112,14 @@ section{padding:6rem 2rem;position:relative}
 .lb-wrap::before{content:'';position:absolute;top:-1px;left:0;right:0;height:2px;border-radius:2px 2px 0 0;z-index:1;background:linear-gradient(90deg,var(--r),var(--p),var(--b),var(--g),var(--y),var(--r));background-size:200%;animation:lbRgb 2s linear infinite}
 @keyframes lbRgb{0%{background-position:0%}100%{background-position:200%}}
 #lbImg{display:block;max-width:90vw;max-height:85vh;border-radius:8px;border:1px solid rgba(0,200,255,.3);box-shadow:0 0 40px rgba(0,200,255,.2);object-fit:contain}
-.lb-lbl{position:absolute;bottom:-2rem;left:0;right:0;text-align:center;font-family:'Share Tech Mono',monospace;font-size:.72rem;letter-spacing:.25em;color:rgba(255,255,255,.4)}
+.lb-lbl{position:absolute;bottom:-2rem;left:0;right:0;text-align:center;font-family:Arial, sans-serif;font-size:.72rem;letter-spacing:.25em;color:rgba(255,255,255,.4)}
 .lb-close{position:absolute;top:-44px;right:0;width:36px;height:36px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;color:rgba(255,255,255,.6);cursor:none;transition:all .2s}
 .lb-close:hover{background:rgba(255,80,80,.2);border-color:rgba(255,80,80,.5);color:#fff}
 .lb-arrow{position:fixed;top:50%;transform:translateY(-50%);width:48px;height:48px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:rgba(255,255,255,.6);cursor:none;transition:all .2s;z-index:100000}
 .lb-arrow:hover{background:rgba(0,200,255,.15);border-color:rgba(0,200,255,.4);color:var(--b);box-shadow:0 0 20px rgba(0,200,255,.3)}
 #lbPrev{left:1.5rem}
 #lbNext{right:1.5rem}
-#lbCount{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-family:'Share Tech Mono',monospace;font-size:.7rem;letter-spacing:.2em;color:rgba(255,255,255,.3);z-index:100000}
+#lbCount{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-family:Arial, sans-serif;font-size:.7rem;letter-spacing:.2em;color:rgba(255,255,255,.3);z-index:100000}
 
 /* FEATURES */
 #features{background:var(--bg2)}
@@ -130,7 +129,7 @@ section{padding:6rem 2rem;position:relative}
 .fcard:hover{border-color:rgba(255,255,255,.15);transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.5);background:rgba(255,255,255,.05)}
 .fcard:hover::before{opacity:1}
 .ficon{font-size:2.5rem;margin-bottom:1rem;display:block}
-.ftitle{font-family:'Orbitron',monospace;font-size:.85rem;font-weight:700;letter-spacing:.05em;margin-bottom:.7rem;color:#fff}
+.ftitle{font-family:Arial, sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.05em;margin-bottom:.7rem;color:#fff}
 .fdesc{font-size:.9rem;color:rgba(232,232,240,.55);line-height:1.6}
 
 /* HOW TO PLAY */
@@ -138,9 +137,9 @@ section{padding:6rem 2rem;position:relative}
 .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;position:relative}
 .steps::before{content:'';position:absolute;top:40px;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,var(--b),var(--p),var(--r),transparent);opacity:.3}
 .step{text-align:center}
-.step-num{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b),var(--p));display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-weight:900;font-size:1.3rem;margin:0 auto 1.2rem;box-shadow:0 0 20px rgba(0,200,255,.5);position:relative;z-index:1}
+.step-num{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b),var(--p));display:flex;align-items:center;justify-content:center;font-family:Arial, sans-serif;font-weight:900;font-size:1.3rem;margin:0 auto 1.2rem;box-shadow:0 0 20px rgba(0,200,255,.5);position:relative;z-index:1}
 .step-icon{font-size:2rem;margin-bottom:1rem;display:block;filter:drop-shadow(0 0 8px rgba(0,200,255,.5))}
-.step-title{font-family:'Orbitron',monospace;font-size:.85rem;font-weight:700;margin-bottom:.5rem;color:#fff}
+.step-title{font-family:Arial, sans-serif;font-size:.85rem;font-weight:700;margin-bottom:.5rem;color:#fff}
 .step-desc{font-size:.9rem;color:rgba(232,232,240,.55);line-height:1.6}
 
 /* DEV STORY */
@@ -150,9 +149,9 @@ section{padding:6rem 2rem;position:relative}
 .ava-ring{position:relative;width:180px;height:180px}
 .ava-ring::before{content:'';position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(var(--r),var(--p),var(--b),var(--g),var(--y),var(--r));animation:spinRing 4s linear infinite}
 @keyframes spinRing{to{transform:rotate(360deg)}}
-.ava-inner{position:absolute;inset:3px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:5rem}
+.ava-inner{position:absolute;inset:3px;border-radius:50%;background:var(--bg2);display:flex;align-items:center;justify-content:center;font-size:3.2rem;font-weight:900;color:#fff;letter-spacing:.05em;text-shadow:0 0 20px var(--b),0 0 40px var(--p)}
 .tech-stack{display:flex;gap:.8rem;flex-wrap:wrap;justify-content:center}
-.tbadge{font-family:'Share Tech Mono',monospace;font-size:.75rem;padding:.4em .9em;border-radius:4px;border:1px solid;letter-spacing:.1em}
+.tbadge{font-family:Arial, sans-serif;font-size:.75rem;padding:.4em .9em;border-radius:4px;border:1px solid;letter-spacing:.1em}
 .t-html{border-color:#e34c26;color:#e34c26;background:rgba(227,76,38,.08)}
 .t-css{border-color:#264de4;color:#264de4;background:rgba(38,77,228,.08)}
 .t-js{border-color:#f7df1e;color:#f7df1e;background:rgba(247,223,30,.08)}
@@ -166,19 +165,19 @@ section{padding:6rem 2rem;position:relative}
 .ccard{display:flex;align-items:center;gap:1.2rem;flex:1;min-width:220px;max-width:340px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.2rem 1.5rem;text-decoration:none;color:inherit;transition:all .25s;cursor:none}
 .ccard:hover{border-color:rgba(0,200,255,.4);background:rgba(0,200,255,.06);transform:translateY(-3px);box-shadow:0 0 25px rgba(0,200,255,.2)}
 .cico{font-size:1.8rem;flex-shrink:0;filter:drop-shadow(0 0 8px rgba(0,200,255,.4))}
-.clabel{font-family:'Share Tech Mono',monospace;font-size:.65rem;letter-spacing:.2em;color:var(--b);margin-bottom:.3rem}
+.clabel{font-family:Arial, sans-serif;font-size:.65rem;letter-spacing:.2em;color:var(--b);margin-bottom:.3rem}
 .cval{font-size:1rem;font-weight:600;color:#fff}
 
 /* CTA */
 #cta{background:var(--bg);text-align:center;padding:8rem 2rem;position:relative;overflow:hidden}
 #cta::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(0,200,255,.06) 0%,transparent 70%);animation:ctaPulse 3s ease infinite}
 @keyframes ctaPulse{0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.5}50%{transform:translate(-50%,-50%) scale(1.2);opacity:1}}
-.cta-title{font-family:'Orbitron',monospace;font-size:clamp(2rem,5vw,4rem);font-weight:900;margin-bottom:1rem;line-height:1.1;position:relative}
+.cta-title{font-family:Arial, sans-serif;font-size:clamp(2rem,5vw,4rem);font-weight:900;margin-bottom:1rem;line-height:1.1;position:relative}
 .cta-title span{background:linear-gradient(90deg,var(--r),var(--p),var(--b),var(--g));background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradMove 3s linear infinite}
 @keyframes gradMove{0%{background-position:0%}100%{background-position:200%}}
 .cta-sub{color:rgba(232,232,240,.5);font-size:1.1rem;margin-bottom:3rem;position:relative}
 .cta-btns{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;position:relative}
-.btn-cta{font-family:'Orbitron',monospace;font-size:1.1rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;padding:1.2em 3em;border-radius:6px;background:linear-gradient(135deg,var(--b),var(--p),var(--r));background-size:200%;color:#fff;cursor:none;display:inline-block;transition:transform .2s;animation:btnGrad 3s linear infinite,btnGlow 2s ease infinite}
+.btn-cta{font-family:Arial, sans-serif;font-size:1.1rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;padding:1.2em 3em;border-radius:6px;background:linear-gradient(135deg,var(--b),var(--p),var(--r));background-size:200%;color:#fff;cursor:none;display:inline-block;transition:transform .2s;animation:btnGrad 3s linear infinite,btnGlow 2s ease infinite}
 @keyframes btnGrad{0%{background-position:0%}100%{background-position:200%}}
 @keyframes btnGlow{0%,100%{box-shadow:0 0 20px rgba(0,200,255,.5),0 0 60px rgba(0,200,255,.2)}50%{box-shadow:0 0 40px rgba(180,0,255,.7),0 0 100px rgba(180,0,255,.3)}}
 .btn-cta:hover{transform:scale(1.05)}
@@ -188,12 +187,12 @@ section{padding:6rem 2rem;position:relative}
 /* FOOTER */
 footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem}
 .foot-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.foot-logo{font-family:'Orbitron',monospace;font-size:1rem;font-weight:700;color:var(--b);text-shadow:0 0 10px var(--b)}
+.foot-logo{font-family:Arial, sans-serif;font-size:1rem;font-weight:700;color:var(--b);text-shadow:0 0 10px var(--b)}
 .foot-links{display:flex;gap:2rem;list-style:none}
-.foot-links a{font-family:'Share Tech Mono',monospace;font-size:.75rem;color:rgba(232,232,240,.4);text-decoration:none;letter-spacing:.1em;transition:color .2s}
+.foot-links a{font-family:Arial, sans-serif;font-size:.75rem;color:rgba(232,232,240,.4);text-decoration:none;letter-spacing:.1em;transition:color .2s}
 .foot-links a:hover{color:var(--b)}
-.foot-copy{font-family:'Share Tech Mono',monospace;font-size:.7rem;color:rgba(232,232,240,.25);letter-spacing:.1em}
-.ver{position:fixed;bottom:1.5rem;right:1.5rem;font-family:'Share Tech Mono',monospace;font-size:.65rem;color:rgba(232,232,240,.3);z-index:50}
+.foot-copy{font-family:Arial, sans-serif;font-size:.7rem;color:rgba(232,232,240,.25);letter-spacing:.1em}
+.ver{position:fixed;bottom:1.5rem;right:1.5rem;font-family:Arial, sans-serif;font-size:.65rem;color:rgba(232,232,240,.3);z-index:50}
 
 /* RESPONSIVE */
 @media(max-width:900px){
@@ -242,8 +241,8 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
     <li><a href="#contact">CONTACT</a></li>
   </ul>
   <div class="nav-actions">
-    <a href="m.html" target="_blank" rel="noopener" class="nav-btn">▶ PLAY NOW</a>
-    <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="nav-btn nav-btn-dl">⬇ DOWNLOAD FOR WIN</a>
+    <a href="https://singvinhchau-ai.github.io/prism-stack-rgb-/" target="_blank" rel="noopener" class="nav-btn">PLAY NOW</a>
+    <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="nav-btn nav-btn-dl">DOWNLOAD FOR WIN</a>
   </div>
 </nav>
 
@@ -252,17 +251,17 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
   <div class="grid-bg"></div>
   <div id="floatBlocks"></div>
   <div class="hero-content">
-    <div class="hero-badge">★ INDIE GAME — LED RGB EDITION ★</div>
+    <div class="hero-badge">INDIE GAME — LED RGB EDITION</div>
     <h1 class="hero-title">
       <span class="t1">PrismStack</span>
       <span class="t2">RGB</span>
     </h1>
-    <p class="hero-sub">⬛ Stack The Spectrum ⬛</p>
+    <p class="hero-sub">Stack The Spectrum</p>
     <p class="hero-tag">The block puzzle that <span>never lets you stop.</span></p>
     <div class="btn-group">
-      <a href="m.html" target="_blank" rel="noopener" class="btn btn-p">▶ PLAY NOW</a>
-      <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="btn btn-dl">⬇ DOWNLOAD FOR WIN</a>
-      <a href="#howtoplay" class="btn btn-s">📖 HOW TO PLAY</a>
+      <a href="https://singvinhchau-ai.github.io/prism-stack-rgb-/" target="_blank" rel="noopener" class="btn btn-p">PLAY NOW</a>
+      <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="btn btn-dl">DOWNLOAD FOR WIN</a>
+      <a href="#howtoplay" class="btn btn-s">HOW TO PLAY</a>
     </div>
   </div>
   <div class="scroll-hint"><span>SCROLL</span><div class="scroll-arrow"></div></div>
@@ -296,10 +295,10 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
         <p>Prism Stack RGB là game xếp khối gây nghiện nơi mỗi quyết định đặt block đều có thể tạo ra phản ứng dây chuyền rực rỡ — không thể ngừng chơi.</p>
         <p>Hãy tư duy chiến lược, tối ưu vị trí, và phá vỡ kỷ lục của chính mình.</p>
         <div>
-          <span class="pill">🟥 Đặt block thông minh</span>
-          <span class="pill">⚡ Tạo combo dây chuyền</span>
-          <span class="pill">🏆 Phá kỷ lục điểm số</span>
-          <span class="pill">🎮 Gameplay vô tận</span>
+          <span class="pill">Đặt block thông minh</span>
+          <span class="pill">Tạo combo dây chuyền</span>
+          <span class="pill">Phá kỷ lục điểm số</span>
+          <span class="pill">Gameplay vô tận</span>
         </div>
       </div>
     </div>
@@ -313,12 +312,12 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
     <h2 class="sec-title"><span class="ac">Visual</span> Gallery</h2>
     <div class="divider"></div>
     <div class="gallery">
-      <div class="gitem" data-label="GAMEPLAY"><img src="Screenshot 2026-07-25 221223.png" alt="Screenshot 1"><div class="g-ov"></div><div class="g-lbl">GAMEPLAY</div><div class="g-zoom">🔍</div></div>
-      <div class="gitem" data-label="COMBO x2"><img src="Screenshot 2026-07-25 221357.png" alt="Screenshot 2"><div class="g-ov"></div><div class="g-lbl">COMBO x2</div><div class="g-zoom">🔍</div></div>
-      <div class="gitem" data-label="RELAXING"><img src="Screenshot 2026-07-25 224236.png" alt="Screenshot 3"><div class="g-ov"></div><div class="g-lbl">RELAXING</div><div class="g-zoom">🔍</div></div>
-      <div class="gitem" data-label="ADDICTIVE"><img src="Screenshot 2026-07-25 222604.png" alt="Screenshot 4"><div class="g-ov"></div><div class="g-lbl">ADDICTIVE</div><div class="g-zoom">🔍</div></div>
-      <div class="gitem" data-label="RGB MODE"><img src="Screenshot 2026-07-25 222844.png" alt="Screenshot 5"><div class="g-ov"></div><div class="g-lbl">RGB MODE</div><div class="g-zoom">🔍</div></div>
-      <div class="gitem" data-label="GAME OVER"><img src="Screenshot 2026-07-25 221317.png" alt="Screenshot 6"><div class="g-ov"></div><div class="g-lbl">GAME OVER</div><div class="g-zoom">🔍</div></div>
+      <div class="gitem" data-label="GAMEPLAY"><img src="Screenshot 2026-07-25 221223.png" alt="Screenshot 1"><div class="g-ov"></div><div class="g-lbl">GAMEPLAY</div><div class="g-zoom"></div></div>
+      <div class="gitem" data-label="COMBO x2"><img src="Screenshot 2026-07-25 221357.png" alt="Screenshot 2"><div class="g-ov"></div><div class="g-lbl">COMBO x2</div><div class="g-zoom"></div></div>
+      <div class="gitem" data-label="RELAXING"><img src="Screenshot 2026-07-25 224236.png" alt="Screenshot 3"><div class="g-ov"></div><div class="g-lbl">RELAXING</div><div class="g-zoom"></div></div>
+      <div class="gitem" data-label="ADDICTIVE"><img src="Screenshot 2026-07-25 222604.png" alt="Screenshot 4"><div class="g-ov"></div><div class="g-lbl">ADDICTIVE</div><div class="g-zoom"></div></div>
+      <div class="gitem" data-label="RGB MODE"><img src="Screenshot 2026-07-25 222844.png" alt="Screenshot 5"><div class="g-ov"></div><div class="g-lbl">RGB MODE</div><div class="g-zoom"></div></div>
+      <div class="gitem" data-label="GAME OVER"><img src="Screenshot 2026-07-25 221317.png" alt="Screenshot 6"><div class="g-ov"></div><div class="g-lbl">GAME OVER</div><div class="g-zoom"></div></div>
     </div>
   </div>
 </section>
@@ -330,11 +329,11 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
     <h2 class="sec-title">What Makes It <span class="ac">Special</span></h2>
     <div class="divider"></div>
     <div class="feat-grid">
-      <div class="fcard" style="--ac:var(--r)"><span class="ficon">🌈</span><div class="ftitle">RGB NEON VISUALS</div><div class="fdesc">Hiệu ứng ánh sáng LED rực rỡ. Mỗi block phát sáng như một pixel trên bảng arcade thực thụ.</div></div>
-      <div class="fcard" style="--ac:var(--g)"><span class="ficon">🧩</span><div class="ftitle">SATISFYING PLACEMENT</div><div class="fdesc">Cảm giác click đặt block cực kỳ mãn nguyện. Thiết kế để não bộ muốn tiếp tục mãi.</div></div>
-      <div class="fcard" style="--ac:var(--b)"><span class="ficon">🏆</span><div class="ftitle">ENDLESS HIGH SCORE</div><div class="fdesc">Không có điểm kết thúc. Chỉ có điểm cao hơn nữa. Thử thách chính mình mỗi lần chơi.</div></div>
-      <div class="fcard" style="--ac:var(--p)"><span class="ficon">✨</span><div class="ftitle">SMOOTH ANIMATIONS</div><div class="fdesc">60FPS mượt mà. Hiệu ứng xóa hàng với particle explosion đẹp mắt và responsive.</div></div>
-      <div class="fcard" style="--ac:var(--y)"><span class="ficon">🧘</span><div class="ftitle">RELAXING STRATEGY</div><div class="fdesc">Không áp lực thời gian. Suy nghĩ thong thả, chơi theo nhịp của riêng bạn.</div></div>
+      <div class="fcard" style="--ac:var(--r)"><div class="ftitle">RGB NEON VISUALS</div><div class="fdesc">Hiệu ứng ánh sáng LED rực rỡ. Mỗi block phát sáng như một pixel trên bảng arcade thực thụ.</div></div>
+      <div class="fcard" style="--ac:var(--g)"><div class="ftitle">SATISFYING PLACEMENT</div><div class="fdesc">Cảm giác click đặt block cực kỳ mãn nguyện. Thiết kế để não bộ muốn tiếp tục mãi.</div></div>
+      <div class="fcard" style="--ac:var(--b)"><div class="ftitle">ENDLESS HIGH SCORE</div><div class="fdesc">Không có điểm kết thúc. Chỉ có điểm cao hơn nữa. Thử thách chính mình mỗi lần chơi.</div></div>
+      <div class="fcard" style="--ac:var(--p)"><div class="ftitle">SMOOTH ANIMATIONS</div><div class="fdesc">60FPS mượt mà. Hiệu ứng xóa hàng với particle explosion đẹp mắt và responsive.</div></div>
+      <div class="fcard" style="--ac:var(--y)"><div class="ftitle">RELAXING STRATEGY</div><div class="fdesc">Không áp lực thời gian. Suy nghĩ thong thả, chơi theo nhịp của riêng bạn.</div></div>
     </div>
   </div>
 </section>
@@ -345,10 +344,10 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
     <h2 class="sec-title">Get Started in <span class="ac">4 Steps</span></h2>
     <div class="divider"></div>
     <div class="steps">
-      <div class="step"><div class="step-num">01</div><span class="step-icon">🎯</span><div class="step-title">CHỌN BLOCK</div><div class="step-desc">Chọn một trong các khối block hiển thị ở dưới bảng chơi.</div></div>
-      <div class="step"><div class="step-num">02</div><span class="step-icon">🖱️</span><div class="step-title">KÉO VÀO BẢNG</div><div class="step-desc">Kéo thả hoặc click để đặt block vào vị trí bạn muốn trên lưới.</div></div>
-      <div class="step"><div class="step-num">03</div><span class="step-icon">💥</span><div class="step-title">LẤP ĐẦY HÀNG</div><div class="step-desc">Lấp đầy hàng ngang hoặc cột dọc để kích hoạt line clear rực rỡ.</div></div>
-      <div class="step"><div class="step-num">04</div><span class="step-icon">🚀</span><div class="step-title">GHI KỶ LỤC</div><div class="step-desc">Combo nhiều hàng liên tiếp để nhân điểm và leo bảng xếp hạng.</div></div>
+      <div class="step"><div class="step-num">01</div><div class="step-title">CHỌN BLOCK</div><div class="step-desc">Chọn một trong các khối block hiển thị ở dưới bảng chơi.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">KÉO VÀO BẢNG</div><div class="step-desc">Kéo thả hoặc click để đặt block vào vị trí bạn muốn trên lưới.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">LẤP ĐẦY HÀNG</div><div class="step-desc">Lấp đầy hàng ngang hoặc cột dọc để kích hoạt line clear rực rỡ.</div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-title">GHI KỶ LỤC</div><div class="step-desc">Combo nhiều hàng liên tiếp để nhân điểm và leo bảng xếp hạng.</div></div>
     </div>
   </div>
 </section>
@@ -358,7 +357,7 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
   <div class="container">
     <div class="dev-inner">
       <div class="dev-ava">
-        <div class="ava-ring"><div class="ava-inner">👨‍💻</div></div>
+        <div class="ava-ring"><div class="ava-inner">VS</div></div>
         <div class="tech-stack">
           <span class="tbadge t-html">HTML5</span>
           <span class="tbadge t-css">CSS3</span>
@@ -384,9 +383,9 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
       <div class="divider" style="margin:0 auto 1rem"></div>
       <p style="color:rgba(232,232,240,.6);font-size:1.05rem;line-height:1.8">Bạn có góp ý về game? Muốn hợp tác? Hay chỉ muốn nói xin chào?<br>Mình luôn sẵn sàng lắng nghe!</p>
       <div class="contact-cards">
-        <a href="mailto:chauvinhsing2k10@gmail.com" class="ccard"><span class="cico">📧</span><div><div class="clabel">PRIMARY EMAIL</div><div class="cval">chauvinhsing2k10@gmail.com</div></div></a>
-        <a href="mailto:singvinhchau@gmail.com" class="ccard"><span class="cico">📨</span><div><div class="clabel">SECONDARY EMAIL</div><div class="cval">singvinhchau@gmail.com</div></div></a>
-        <a href="tel:0782316603" class="ccard"><span class="cico">📱</span><div><div class="clabel">PHONE / ZALO</div><div class="cval">0782 316 603</div></div></a>
+        <a href="mailto:chauvinhsing2k10@gmail.com" class="ccard"><div><div class="clabel">PRIMARY EMAIL</div><div class="cval">chauvinhsing2k10@gmail.com</div></div></a>
+        <a href="mailto:singvinhchau@gmail.com" class="ccard"><div><div class="clabel">SECONDARY EMAIL</div><div class="cval">singvinhchau@gmail.com</div></div></a>
+        <a href="tel:0782316603" class="ccard"><div><div class="clabel">PHONE / ZALO</div><div class="cval">0782 316 603</div></div></a>
       </div>
     </div>
   </div>
@@ -398,8 +397,8 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
     <h2 class="cta-title"><span>PLAY Prism Stack RGB NOW</span></h2>
     <p class="cta-sub" style="margin-bottom:3rem">Free to play. No download required. Or grab the Windows app below.</p>
     <div class="cta-btns">
-      <a href="m.html" target="_blank" rel="noopener" class="btn-cta">▶ LAUNCH GAME</a>
-      <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="btn-cta btn-cta-dl">⬇ DOWNLOAD FOR WIN</a>
+      <a href="https://singvinhchau-ai.github.io/prism-stack-rgb-/" target="_blank" rel="noopener" class="btn-cta">LAUNCH GAME</a>
+      <a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download class="btn-cta btn-cta-dl">DOWNLOAD FOR WIN</a>
     </div>
   </div>
 </section>
@@ -409,7 +408,7 @@ footer{background:#020205;border-top:1px solid var(--border);padding:2.5rem 2rem
   <div class="foot-inner">
     <div class="foot-logo">Prism Stack RGB</div>
     <ul class="foot-links">
-      <li><a href="m.html" target="_blank">PLAY</a></li>
+      <li><a href="https://singvinhchau-ai.github.io/prism-stack-rgb-/" target="_blank">PLAY</a></li>
       <li><a href="https://github.com/singvinhchau-ai/prism-stack-rgb-/releases/download/v1.0.0/PrismStack.RGB.Setup.1.0.0.exe" download>DOWNLOAD</a></li>
       <li><a href="#howtoplay">HOW TO PLAY</a></li>
       <li><a href="#devstory">ABOUT</a></li>
